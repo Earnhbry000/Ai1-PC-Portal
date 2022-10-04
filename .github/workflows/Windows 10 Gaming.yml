@@ -1,4 +1,4 @@
-name: Windows 10 Gamer
+name: CRD Gaming
 
 on: 
   workflow_dispatch:
