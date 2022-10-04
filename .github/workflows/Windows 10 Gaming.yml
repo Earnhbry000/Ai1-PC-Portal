@@ -32,8 +32,7 @@ jobs:
         copy Steam.exe C:\Users\Public\Desktop\Steam.exe
 
     - name: Install Apps
-      run: |
-       cmd /c C:\Users\Public\Desktop\Winrar.exe Winrar.exe /s
-       cmd /c C:\Users\Public\Desktop\Steam.exe Steam.exe /s
+  run: cmd /c C:\Users\Public\Desktop\Winrar.exe Winrar.exe /s
+
     - name: Keep Alive FOr 60 Minutes
       run: ./timeout.ps1
