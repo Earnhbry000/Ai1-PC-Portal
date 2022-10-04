@@ -1,4 +1,4 @@
-name: Chrome Remote Desktop
+name: Windows 10 Gaming
 
 on: 
   workflow_dispatch:
