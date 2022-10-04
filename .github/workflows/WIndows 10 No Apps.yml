@@ -1,4 +1,4 @@
-name: Chrome Remote Desktop
+name: Windows 10 Base
 
 on: 
   workflow_dispatch:
