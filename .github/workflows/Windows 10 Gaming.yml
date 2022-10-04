@@ -1,4 +1,4 @@
-name: CRD Gaming
+name: Chrome Remote Desktop
 
 on: 
   workflow_dispatch:
