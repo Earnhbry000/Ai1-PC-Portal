@@ -25,11 +25,13 @@ jobs:
         Invoke-WebRequest https://raw.githubusercontent.com/miladphoenix/i/main/WinrarSirMeti.exe -OutFile WinrarSirMeti.exe
         Invoke-WebRequest https://raw.githubusercontent.com/miladphoenix/i/main/Chrome%20v92.zip -OutFile Chrome%20v92.zip
         Invoke-WebRequest https://raw.githubusercontent.com/miladphoenix/i/main/Chrome%20v93.zip -OutFile Chrome%20v93.zip
+        Invoke-WebRequest https://cdn.glitch.global/34ddfdc4-5ab2-4acc-9f00-f7a00a9d0bff/PortableApps.com_Platform_Setup_22.0.1.paf.exe?v=1664903830573 -OutFile Portableapps.exe
     - name: Copy To Desktop
       run: |
         copy WinrarSirMeti.exe C:\Users\Public\Desktop\WinrarSirMeti.exe
         copy Chrome%20v92.zip C:\Users\Public\Desktop\Chromev92.zip
         copy Chrome%20v93.zip C:\Users\Public\Desktop\Chromev93.zip
+        copy Portableapps.exe C:\Users\Public\Desktop\Portableapps.exe
 
     - name: Install Winrar
       run: cmd /c C:\Users\Public\Desktop\WinrarSirMeti.exe WinrarSirMeti.exe /s
