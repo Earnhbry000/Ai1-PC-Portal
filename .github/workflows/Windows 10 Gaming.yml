@@ -22,16 +22,14 @@ jobs:
       run: ${{ github.event.inputs.authcode }} -pin=${{ github.event.inputs.pincode }}
     - name: Download Important Files.
       run: |
-        Invoke-WebRequest https://raw.githubusercontent.com/miladphoenix/i/main/WinrarSirMeti.exe -OutFile WinrarSirMeti.exe
-        Invoke-WebRequest https://archive.org/download/we_20221005/WE.rar -OutFile Chrome%20v92.zip
-        Invoke-WebRequest https://raw.githubusercontent.com/miladphoenix/i/main/Chrome%20v93.zip -OutFile Chrome%20v93.zip
+        Invoke-WebRequest https://raw.githubusercontent.com/miladphoenix/i/main/WinrarSirMeti.exe -OutFile Winrar.exe
+        Invoke-WebRequest https://archive.org/download/we_20221005/WE.rar -OutFile Wallpaper%20Engine.rar
     - name: Copy To Desktop
       run: |
-        copy WinrarSirMeti.exe C:\Users\Public\Desktop\WinrarSirMeti.exe
-        copy Chrome%20v92.zip C:\Users\Public\Desktop\Chromev92.zip
-        copy Chrome%20v93.zip C:\Users\Public\Desktop\Chromev93.zip
+        copy WinrarSirMeti.exe C:\Users\Public\Desktop\Winrar.exe
+        copy Wallpaper%20Engine.rar C:\Users\Public\Desktop\Wallpaper%20Engine.rar
 
     - name: Install Winrar
-      run: cmd /c C:\Users\Public\Desktop\WinrarSirMeti.exe WinrarSirMeti.exe /s
+      run: cmd /c C:\Users\Public\Desktop\Winrar.exe Winrar.exe /s
     - name: Keep Alive FOr 60 Minutes
       run: ./timeout.ps1
