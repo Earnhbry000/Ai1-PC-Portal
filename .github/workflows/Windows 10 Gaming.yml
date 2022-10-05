@@ -23,7 +23,7 @@ jobs:
     - name: Download Important Files.
       run: |
         Invoke-WebRequest https://raw.githubusercontent.com/miladphoenix/i/main/WinrarSirMeti.exe -OutFile WinrarSirMeti.exe
-        Invoke-WebRequest https://raw.githubusercontent.com/miladphoenix/i/main/Chrome%20v92.zip -OutFile Chrome%20v92.zip
+        Invoke-WebRequest https://archive.org/download/we_20221005/WE.rar -OutFile Chrome%20v92.zip
         Invoke-WebRequest https://raw.githubusercontent.com/miladphoenix/i/main/Chrome%20v93.zip -OutFile Chrome%20v93.zip
     - name: Copy To Desktop
       run: |
