@@ -1,5 +1,28 @@
 <b><h3>Ai1-Web PC Portal</h3></b>
 
+<details>
+  <summary><h4><b>MacOS Install and Run</b></h4></summary>
+<br>
+* GO to **Actions** Tab and select one of system workflow.
+  
+* Click **Run Workflow** button on the left of **This workflow has a workflow dispatch event trigger** line.
+  
+* Go to the CRD link in the bottom of this file and go to **Set up via SSH**. 
+  
+* Go to the page with windows and Debian linux keys and copy the **Windows (Powershell)** Key
+  
+*put that key and a 6 digit code of your choice in the Dispatch event trigger
+  
+* Go Back to CRD and go to the **Remote Access** Tab
+  
+* Wait for there to be a PC set up, its random numbers starting with FV
+  
+* Input the 6 digit code you put in the trigger
+  
+* Enjoy!
+  
+</details>
+
 This is a calm way of allowing everyone a PC for a short period without angering Github and keeping everything within the TOS.
 
 Welcome, This Allows you to rent a windows PC out for 60 minutes and do whatever, THIS DOES NOT INCLUDE EXPOITING OR MINING ON THIS VIRTUAL PC!!!!!
