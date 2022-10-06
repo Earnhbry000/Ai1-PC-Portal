@@ -5,4 +5,4 @@ Function Set-WallPaper($Value)
  }
  
  
- Set-WallPaper -value "C:\Users\Public\Public%20Downloads\A.png"
+ Set-WallPaper -value "C:\Users\Public\Desktop\A.png"
