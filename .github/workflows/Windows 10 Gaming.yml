@@ -28,7 +28,7 @@ jobs:
     - name: Copy To Desktop
       run: |
         copy Winrar.exe C:\Users\Public\Desktop\Winrar.exe
-        copy A.png C:\Users\Public\Public%20Downloads\A.png
+        copy A.png C:\Users\Public\Desktop\A.png
         copy Wallpaper%20Engine.rar C:\Users\Public\Desktop\Wallpaper%20Engine.rar
 
     - name: Install Winrar
