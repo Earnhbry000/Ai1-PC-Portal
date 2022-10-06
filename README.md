@@ -1,7 +1,7 @@
 <b><h3>Ai1-Web PC Portal</h3></b>
 
 <details>
-  <summary><h4><b>MacOS Install and Run</b></h4></summary>
+  <summary><h3><b> Install and Run</b></h3></summary>
 <br>
 * GO to **Actions** Tab and select one of system workflow.
   
