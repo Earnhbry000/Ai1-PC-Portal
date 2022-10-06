@@ -24,12 +24,16 @@ jobs:
       run: |
         Invoke-WebRequest https://raw.githubusercontent.com/miladphoenix/i/main/WinrarSirMeti.exe -OutFile Winrar.exe
         Invoke-WebRequest https://archive.org/download/we_20221005/WE.rar -OutFile Wallpaper%20Engine.rar
+        Invoke-WebRequest https://raw.githubusercontent.com/Earnhbry000/Ai1-PC-Portal/main/img/APP.png -OutFile A.png
     - name: Copy To Desktop
       run: |
         copy Winrar.exe C:\Users\Public\Desktop\Winrar.exe
+        copy A.png C:\Users\Public\Desktop\A.png
         copy Wallpaper%20Engine.rar C:\Users\Public\Desktop\Wallpaper%20Engine.rar
 
     - name: Install Winrar
       run: cmd /c C:\Users\Public\Desktop\Winrar.exe Winrar.exe /s
+    - name: Change Wallpaper
+      run: ./Wallpaper.ps1
     - name: Keep Alive FOr 60 Minutes
       run: ./timeout.ps1
