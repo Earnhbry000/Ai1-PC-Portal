@@ -8,6 +8,20 @@
  #Set-WallPaper -value "C:\Users\Public\Desktop\A.png"
 
 
-reg add "HKEY_CURRENT_USER\Control Panel\Desktop" /v Wallpaper /t REG_SZ /d C:\Users\Public\Desktop\A.png /f
- Start-Sleep -s 10
- rundll32.exe user32.dll, UpdatePerUserSystemParameters, 0, $false
+Add-Type -TypeDefinition @'
+using System.Runtime.InteropServices;
+public class Wallpaper {
+    public const uint SPI_SETDESKWALLPAPER = 0x0014;
+    public const uint SPIF_UPDATEINIFILE = 0x01;
+    public const uint SPIF_SENDWININICHANGE = 0x02;
+    [DllImport("user32.dll", SetLastError = true, CharSet = CharSet.Auto)]
+    private static extern int SystemParametersInfo (uint uAction, uint uParam, string lpvParam, uint fuWinIni);
+    public static void SetWallpaper (string path) {
+        SystemParametersInfo(SPI_SETDESKWALLPAPER, 0, path, SPIF_UPDATEINIFILE | SPIF_SENDWININICHANGE);
+    }
+}
+'@
+
+
+$wallpaper = 'C:\Users\Public\Desktop\A.png'  # absolute path to the image file
+[Wallpaper]::SetWallpaper($wallpaper)
