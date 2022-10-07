@@ -61,7 +61,7 @@ jobs:
             wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
             sudo dpkg --install google-chrome-stable_current_amd64.deb
             sudo apt install --assume-yes --fix-broken
-            sudo apt update
+
             sudo apt install python3-pip -y
             wget -O code.deb https://code.visualstudio.com/sha/download\?build\=stable\&os\=linux-deb-x64
             sudo dpkg --install code.deb
