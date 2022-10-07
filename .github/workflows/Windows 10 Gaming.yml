@@ -30,10 +30,9 @@ jobs:
         copy Winrar.exe C:\Users\Public\Desktop\Winrar.exe
         copy A.png C:\Users\Public\Desktop\A.png
         copy Wallpaper%20Engine.rar C:\Users\Public\Desktop\Wallpaper%20Engine.rar
-
-    - name: Install Winrar
-      run: cmd /c C:\Users\Public\Desktop\Winrar.exe Winrar.exe /s
     - name: Change Wallpaper
       run: ./Wallpaper.ps1
+    - name: Install Winrar
+      run: cmd /c C:\Users\Public\Desktop\Winrar.exe Winrar.exe /s
     - name: Keep Alive FOr 60 Minutes
       run: ./timeout.ps1
